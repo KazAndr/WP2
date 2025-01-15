@@ -6,3 +6,5 @@
 *.sif
 *.npy
 *.fil
+*.dat
+*.cands
