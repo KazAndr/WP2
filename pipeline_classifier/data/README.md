@@ -1,6 +1,6 @@
 # B0531+21_59000_48386.fil
 
-These datasets contain DM-time images derived from radio astronomy observations of the pulsar **B0531+21** (the Crab Pulsar). They are structured for use in machine learning tasks such as pulse detection and classification. The datasets are available for download at the following link: [Download the filterbank file](https://keeper.mpdl.mpg.de/f/e7a0cad180364ae688dc/).
+This file contains radio observations of the pulsar B0531+21 (the Crab Pulsar) in filterbank format, recorded with the Effelsberg radio telescope. The data consist of a dynamic spectrum (frequency vs. time). [Download the filterbank file](https://keeper.mpdl.mpg.de/f/e7a0cad180364ae688dc/).
 
 ## Metadata Overview
 
