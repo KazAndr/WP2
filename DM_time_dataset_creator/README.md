@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `DMTimeDataSetCreator` is a Python-based tool designed to process filterbank file of an observations and based on transient list of candidates form TransientX create an augmented **DM-Time Dataset**. This dataset is used for analyzing transient signals, such as pulsars or fast radio bursts (FRBs), by generating time-series images across different **Dispersion Measure (DM)** values.
+The `DMTimeDataSetCreator` is a Python-based tool designed to process filterbank file of an observations and based on transient list of candidates form [TransientX](https://github.com/ypmen/TransientX) create an augmented **DM-Time Dataset**. 
 
 ---
 

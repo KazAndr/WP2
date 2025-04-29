@@ -1,4 +1,4 @@
-# Bowtie Recognition Pipeline
+# Single-pulse Recognition Pipeline
 
 This repository contains a high-performance pipeline for transient recognition, designed to process pulsar data, run inference models, and handle data buffers efficiently. The pipeline leverages **TransientX** and TensorFlow-based machine learning models to classify single-pulse candidates in astronomical data, specifically in the DM-time plane format. At its current stage, the model is optimized for detecting individual pulses from the Crab Pulsar (B5031+21) within a dispersion measure (DM) range of 0 to 128, with a step size of 0.5.
 
