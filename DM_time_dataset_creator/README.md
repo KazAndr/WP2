@@ -137,4 +137,3 @@ The processor creates:
 
 - Ensure the paths in `config.json` are valid and accessible.
 - The processor expects `.dat` files in `transientx_time_series_path` and a valid `.cands` file at `transientx_candidates_path`.
-- For best performance, use high-quality input data and adjust parameters in `config.json` as needed.
