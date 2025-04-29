@@ -29,7 +29,7 @@ output_filename = f"predictions_{config['name_of_the_filterbank'].split('.')[0]}
 # This allows incremental saving without loading full array in memory
 predictions_array = np.lib.format.open_memmap(
     output_filename,       # Output file path
-    dtype=object,          # Data type (can handle variable-length sequences)
+    dtype=np.int32,          # Data type (can handle variable-length sequences)
     mode='w+',             # Read/write mode, creates new file
     shape=(config["n_spectra"],)  # Pre-allocate array size
 )
@@ -54,7 +54,7 @@ for i in trange(config["n_spectra"]):
     normalized_image = normalize_image_to_255(data[::-1])
     
     # Add batch and channel dimensions for model input
-    reshaped_data = data.reshape(1, *normalized_image.shape, 1)
+    reshaped_data = normalized_image.reshape(1, *normalized_image.shape, 1)
     
     # Run model inference (disable training-specific ops)
     prediction = model(reshaped_data, training=False)
@@ -63,7 +63,7 @@ for i in trange(config["n_spectra"]):
     max_index = tf.argmax(prediction, axis=-1)
     
     # Store prediction in memory-mapped array
-    predictions_array[i] = max_index.numpy()[0]
+    predictions_array[i] = int(max_index.numpy()[0])
     
     # Mark buffer page as processed
     reader.markCleared()
