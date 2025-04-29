@@ -57,15 +57,6 @@ The training process is controlled using a JSON configuration file. Below is an 
 - **`num_epochs`**: Maximum number of training epochs.
 - **`patience`**: Number of epochs without improvement to trigger early stopping.
 
-## Models
-
-The training pipeline supports multiple CNN architectures, implemented in `training_models.py`. Each model is designed to handle different DM-time data resolutions.
-
-### Supported Models
-- **`DM_time_binary_classificator_241002_1`**: A simple CNN with one convolutional layer.
-- **`DM_time_binary_classificator_241002_2`**: A deeper CNN with max pooling.
-- **`DM_time_binary_classificator_241002_3`**: A more complex CNN with multiple convolutional and pooling layers.
-
 ## Workflow
 
 1. **Load Configuration**: The pipeline loads training parameters and paths from the configuration file.
@@ -102,25 +93,3 @@ The training pipeline supports multiple CNN architectures, implemented in `train
 
 - **Model Checkpoints**: Saved with filenames indicating epoch, training accuracy, and validation accuracy.
 - **Performance Plots**: Visualizations of training/validation loss and accuracy across epochs.
-
-## Directory Structure After Training
-
-```
-project/
-├── data/
-│   ├── B0531+21_59000_48386_DM_time_dataset_realbased_training.npy
-│   ├── B0531+21_59000_48386_DM_time_dataset_realbased_labels_training.npy
-├── checkpoints/
-│   ├── ch_point_DM_time_binary_classificator_241002_3_256/
-│   │   ├── prot-001-0.900-0.850.h5
-├── images/
-│   ├── accuracy_across_epochs_for_DM_time_binary_classificator_241002_3_256x256.jpg
-├── training_pipeline.py
-├── training_models.py
-├── config.json
-```
-
-## Future Enhancements
-
-- Support for additional architectures.
-- Integration with hyperparameter tuning libraries for automated optimization.
