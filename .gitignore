@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+
+*.pyc
+*.h5
+*.swp
+*.sif
+*.npy
+*.fil
+*.dat
+*.cands
