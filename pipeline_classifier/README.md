@@ -40,7 +40,7 @@ The pipeline requires the following dependencies:
    Stops all running processes and deallocates buffers.
 
 ### Key Components
-- **`main_pipeline.py`**: Orchestrates the entire workflow, from buffer creation to inference.
+- **`run_pipeline.py`**: Orchestrates the entire workflow, from buffer creation to inference.
 - **`run_inference.py`**: Loads the TensorFlow model and processes DM-time images for classification.
 - **`utils.py`**: Provides helper functions for command execution, buffer management, and data normalization.
 
@@ -51,7 +51,7 @@ The pipeline requires the following dependencies:
 
 2. **Run the Pipeline**:
    ```bash
-   python main_pipeline.py -c config.json
+   python run_pipeline.py -c config.json
    ```
 
 3. **Output**:
