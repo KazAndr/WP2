@@ -82,7 +82,7 @@ The training process is controlled using a JSON configuration file. Below is an 
 
 2. **Run the Training Script**:
    ```bash
-   python training_pipeline.py config.json
+   python training.py config.json
    ```
 
 3. **Output**:
